@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/book-solid.svg" />
+  <title>Purchasing Management System</title>
+  <link rel="stylesheet" href="css/flickity.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- main css file -->
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="custom-scrollbar" id="index">
+  <!-- main sec -->
+  <section id="main">
+    <div class="container pt-3 pb-3">
+      <h1 class="text-center mt-5">Purchasing Management System</h1>
+      <form>
+        <div class="row">
+          <div class="form-group mt-3 col-md-3 col-sm-6 col-6">
+            <label for="exampleInputText1">Product</label>
+            <input type="text" class="form-control" id="exampleInputText1" placeholder="Product">
+          </div>
+          <div class="form-group mt-3 col-md-3 col-sm-6 col-6">
+            <label for="exampleInputNumber1">Quantity</label>
+            <input type="number" class="form-control" id="exampleInputNumber1" placeholder="Quantity">
+          </div>
+          <div class="form-group mt-3 col-md-3 col-sm-6 col-6">
+            <label for="exampleInputNumber2">Price</label>
+            <input type="number" class="form-control" id="exampleInputNumber2" placeholder="Price">
+          </div>
+          <div class="form-group mt-3 col-md-3 col-sm-6 col-6">
+            <label for="exampleInputDate1">Date of purchase</label>
+            <input type="date" class="form-control" id="exampleInputDate1">
+          </div>
+          <div class="form-group mt-3 col-md-6 col-12">
+            <label for="exampleInputDate1">Search for a product</label>
+            <textarea class="form-control" id="exampleInputSearch1"></textarea>
+              <div id="Allsearchbar">
+                
+              </div>
+          </div>
+          <div class="form-group mt-3 col-md-6 col-12">
+            <label for="exampleInputDate1">Search for month data</label>
+            <input type="month" class="form-control" id="exampleInputSearch2">
+          </div>
+        </div>
+      </form>
+      <button id="add" class="add btn purple mt-4 mb-3">Add</button>
+      <button id="save" class="save btn white mt-3 mb-3">Save</button>
+    </div>
+  </section>
+  <!-- result sec -->
+  <section id="result">
+    <div class="container pt-3 pb-3">
+      <div class="allSort row mb-3">
+        <div class="col-xl-3 col-md-6 col-12">
+          <button id="sort1" class="btn white">
+            This day data <i class="fa-solid fa-file-contract"></i>
+          </button>
+        </div>
+        <div class="col-xl-3 col-md-6 col-12">
+          <button id="sort2" class="btn white">
+            This month data <i class="fa-solid fa-file-contract"></i>
+          </button>
+        </div>
+        <div class="col-xl-3 col-md-6 col-12">
+          <button id="sort3" class="btn white">
+            Last six months data <i class="fa-solid fa-file-contract"></i>
+          </button>
+        </div>
+        <div class="col-xl-3 col-md-6 col-12">
+          <button id="sort4" class="btn white">
+            This year data <i class="fa-solid fa-file-contract"></i>
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <td class="col">ID</td>
+              <td class="col">Product</td>
+              <td class="col">Quantity</td>
+              <td class="col">Price</td>
+              <td class="col">Date of purchase</td>
+              <td class="col">Update</td>
+              <td class="col">Delete</td>
+            </tr>
+          </thead>
+          <tbody id="tbody" class="tbody">
+            <tr>
+              <td class="col">Total amount</td>
+              <td class="TotalIncome" colspan="6"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <!-- main js file -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

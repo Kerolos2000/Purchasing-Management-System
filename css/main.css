@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marhey:wght@300;400;500;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+html body {
+  min-height: 100vh;
+  background: url("../img/Simple Shiny.svg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Fredoka One", cursive;
+  font-family: "Secular One", sans-serif;
+  font-family: "Marhey", cursive;
+  background-color: #0d051f;
+  color: #fff;
+  font-size: 1.5rem;
+}
+@media (max-width: 767px) {
+  html body {
+    font-size: 1rem;
+  }
+}
+html body::-webkit-scrollbar {
+  width: 12px;
+}
+html body::-webkit-scrollbar-thumb {
+  background-color: #FFF;
+  opacity: 0.5;
+}
+html body::-webkit-scrollbar-thumb:hover {
+  opacity: 1;
+}
+html body::-webkit-scrollbar-track {
+  background-color: #362a44;
+}
+
+::-moz-selection {
+  background: #362a44;
+  color: #FFF;
+}
+
+::selection {
+  background: #362a44;
+  color: #FFF;
+}
+
+#main .save {
+  display: none;
+}
+
+#result .row {
+  overflow-x: overlay;
+  margin: 0;
+}
+#result .row::-webkit-scrollbar {
+  width: 5px;
+}
+#result .row::-webkit-scrollbar-thumb {
+  background-color: #FFF;
+  opacity: 0.5;
+}
+#result .row::-webkit-scrollbar-thumb:hover {
+  opacity: 1;
+}
+#result .row::-webkit-scrollbar-track {
+  background-color: #362a44;
+}
+#result .row tbody tr td {
+  vertical-align: middle;
+}
+#result .row .table-striped tbody tr:nth-of-type(odd) > * {
+  --bs-table-accent-bg: hwb(257 5% 88% / 0.507);
+  color: #fff;
+}
+#result .row .table-striped tbody:not(caption) > * > * {
+  padding: 0.5rem 0.5rem;
+  background-color: rgba(0, 1, 26, 0.3137254902);
+  border-bottom-width: 1px;
+  box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+#result .row .table > :not(caption) > * > * {
+  padding: 0.5rem 0.5rem;
+  background-color: rgba(0, 1, 26, 0.3137254902);
+  border-bottom-width: 1px;
+  box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+#result .row table {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.btn {
+  box-shadow: 0;
+}
+.btn:focus {
+  box-shadow: none;
+}
+
+#sort1 {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#sort2 {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#sort3 {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#sort4 {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.purple {
+  padding: 10px 30px;
+  font-size: 20px;
+  color: #d5a1ff;
+  background: transparent;
+  transition: 0.5s;
+  border: 2px solid #d5a1ff;
+}
+.purple:hover {
+  color: #FFF;
+  box-shadow: inset 0 -100px 0 0 #d5a1ff, 0 0 30px 5px rgba(213, 161, 255, 0.6509803922);
+}
+
+.white {
+  padding: 5px 15px;
+  font-size: 20px;
+  color: #ffffff;
+  background: transparent;
+  transition: 0.5s;
+  border: 2px solid #ffffff;
+}
+.white:hover {
+  color: #000000;
+  box-shadow: inset 0 -100px 0 0 #ffffff;
+}
+
+.yellow {
+  padding: 5px 15px;
+  font-size: 20px;
+  color: #ffde3f;
+  background: transparent;
+  transition: 0.5s;
+  border: 2px solid #ffde3f;
+}
+.yellow:hover {
+  color: #000000;
+  box-shadow: inset 0 -100px 0 0 #ffde3f;
+}
+
+.red {
+  padding: 5px 15px;
+  font-size: 20px;
+  color: #ff6666;
+  background: transparent;
+  transition: 0.5s;
+  border: 2px solid #ff6666;
+}
+.red:hover {
+  color: #000000;
+  box-shadow: inset 0 -100px 0 0 #ff6666;
+}
+
+input {
+  transition: 1s !important;
+}
+input:focus {
+  scale: 1.04;
+}
+
+.active {
+  box-shadow: 0 0 20px 0px #d5a1ff;
+}
+
+#Allsearchbar {
+  background: #2f1a5e;
+  height: auto;
+  overflow: overlay;
+  cursor: pointer;
+  max-height: 20vh;
+  display: none;
+}
+#Allsearchbar::-webkit-scrollbar {
+  width: 8px;
+}
+#Allsearchbar::-webkit-scrollbar-thumb {
+  background-color: #FFF;
+  opacity: 0.5;
+}
+#Allsearchbar::-webkit-scrollbar-thumb:hover {
+  opacity: 1;
+}
+#Allsearchbar::-webkit-scrollbar-track {
+  background-color: #362a44;
+}
+
+.p {
+  padding: 5px 10px;
+  margin: 0;
+  transition: 0.5s;
+}
+.p:hover {
+  background: #6140a8;
+}
+
+#exampleInputSearch1 {
+  height: 1rem;
+  resize: none;
+}/*# sourceMappingURL=main.css.map */
